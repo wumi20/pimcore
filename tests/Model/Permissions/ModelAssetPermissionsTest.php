@@ -732,11 +732,11 @@ class ModelAssetPermissionsTest extends ModelTestCase
 
         //search manyelement
         $this->doTestSearch('manyelement', $admin, array_merge(
-                array_map(function ($item) {
-                    return $item->getFullpath();
-                }, $manyElementList),
-                [ $manyElementX->getFullpath() ]
-            ), $elementCount + 1
+            array_map(function ($item) {
+                return $item->getFullpath();
+            }, $manyElementList),
+            [ $manyElementX->getFullpath() ]
+        ), $elementCount + 1
         );
         $this->doTestSearch('manyelement', $this->userPermissionTest1, [$manyElementX->getFullpath()], $elementCount + 1);
         $this->doTestSearch('manyelement', $this->userPermissionTest2, [$manyElementX->getFullpath()], $elementCount + 1);

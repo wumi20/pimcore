@@ -1021,7 +1021,7 @@ class Asset extends Element\AbstractElement
             if (!$isNested) {
                 $fullPath = $this->getRealFullPath();
                 if ($fullPath != '/..' && !strpos($fullPath,
-                        '/../') && $this->getKey() !== '.' && $this->getKey() !== '..') {
+                    '/../') && $this->getKey() !== '.' && $this->getKey() !== '..') {
                     $this->deletePhysicalFile();
                 }
             }

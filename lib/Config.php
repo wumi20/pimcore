@@ -358,6 +358,7 @@ final class Config implements \ArrayAccess
      * @throws \Exception
      *
      * @internal
+     *
      * @static
      */
     public static function getReportConfig(): PimcoreConfig
@@ -391,6 +392,7 @@ final class Config implements \ArrayAccess
 
     /**
      * @internal
+     *
      * @static
      *
      * @param \Pimcore\Config\Config $config
@@ -447,6 +449,7 @@ final class Config implements \ArrayAccess
 
     /**
      * @internal
+     *
      * @static
      *
      * @return \Pimcore\Config\Config
@@ -465,6 +468,7 @@ final class Config implements \ArrayAccess
 
     /**
      * @internal
+     *
      * @static
      *
      * @param \Pimcore\Config\Config $config
@@ -476,6 +480,7 @@ final class Config implements \ArrayAccess
 
     /**
      * @internal
+     *
      * @static
      *
      * @param \Pimcore\Config\Config $config
